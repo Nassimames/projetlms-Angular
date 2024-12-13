@@ -1,0 +1,55 @@
+<div class="navbar">
+  <div class="menu-icon" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <img src="lmss-removebg-preview.png" alt="LMS Academy Logo" class="logo">
+  <input type="text" placeholder="search" class="search-bar">
+  <img 
+  class="user-icon" 
+  src="profil.png" 
+  alt="User Icon" 
+  (click)="goToUserDetails()" 
+/>
+  </div>
+  
+  <!-- Menu latéral -->
+  <!-- Menu latéral -->
+<!-- Menu latéral -->
+<div class="side-menu" *ngIf="isMenuOpen">
+  <ul>
+    <li><mat-icon>home</mat-icon> Home</li>
+    <li [routerLink]="'/courses'">
+      <mat-icon>book</mat-icon> Cours
+    </li>
+   
+    <li><mat-icon>star</mat-icon> Badges</li>
+    <li routerLink="/calendar">
+      <mat-icon>calendar_today</mat-icon> Calendrier
+    </li>  </ul>
+</div>
+
+  <div class="main-content">
+    <!-- Section des cours -->
+    <div class="course-section">
+      <h3>Cours</h3>
+      <div class="course-cards">
+        <div class="card">Tous les cours</div>
+        <div class="card">En cours</div>
+        <div class="card">Terminé</div>
+      </div>
+    </div>
+  
+    <!-- Section Bienvenue -->
+    <div class="welcome-section">
+      <h2>Bienvenue de nouveau, Nassima ! 👋</h2>
+      <p>Today is Tuesday 22 October 2024. Your last login was 6 days ago.</p>
+      <p>Recently accessed course: INF5105 Services Oriented Architecture.</p>
+      <button class="continue-btn" (click)="navigateToCourseDetails()">Continue</button>
+    </div>
+  </div>
+  
+
+  

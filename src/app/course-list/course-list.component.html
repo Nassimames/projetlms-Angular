@@ -1,0 +1,15 @@
+
+<app-layout></app-layout>
+
+<div class="course-list">
+  <div *ngFor="let course of courses" class="course-card">
+    <div class="course-info">
+      <h4 class="course-name">{{ course.name }}</h4>
+      <p class="course-description">{{ course.description }}</p>
+      <button class="view-button" [routerLink]="['/course-details', course.id]">Voir plus</button>
+    </div>
+  </div>
+</div>
+
+
+

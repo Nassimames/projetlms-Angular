@@ -1,0 +1,36 @@
+<div class="login-container">
+    <!-- Section pour le logo et la partie à propos -->
+    <div class="about-section">
+        <div class="logo">
+            <img src="logo.png" alt="LMS Academy"> 
+        </div>
+
+        <div class="about">
+            <p>Dans un monde où l'apprentissage est un voyage, nous avons créé une plateforme qui transforme l'éducation en une expérience interactive et collaborative. Notre mission est d'inspirer chaque étudiant à explorer, partager et grandir ensemble. Rejoignez-nous pour révolutionner l'apprentissage et construire un avenir où la curiosité et la créativité sont les clés du succès. Ensemble, ouvrons les portes d'un savoir illimité !</p>
+        </div>
+    </div>
+
+    <!-- Section pour le formulaire -->
+    <div class="form-section">
+        <form>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="mot de passe" />
+            <label>
+                <input type="checkbox" /> Rappelle-moi
+            </label>
+            <!-- Exemple de bouton de login -->
+           <button (click)="onLogin()">Login</button>
+
+        </form>
+
+        <div class="links">
+            <a href="#">mot de passe oubliée ?</a>
+            <br />
+            <p>
+                Vous n'avez pas de compte ?
+                <a (click)="navigateToSignIn()">Inscrivez-vous ici</a>
+              </p>
+              
+        </div>
+    </div>
+</div>

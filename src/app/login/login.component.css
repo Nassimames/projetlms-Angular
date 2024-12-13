@@ -1,0 +1,115 @@
+/* Style général de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Utiliser toute la hauteur de la fenêtre */
+    margin: 0; /* Supprimer les marges */
+}
+
+/* Container principal */
+.login-container {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les sections */
+    align-items: flex-start; /* Alignement au début */
+    width: 80%; /* Largeur de la page */
+    max-width: 1200px; /* Largeur maximale */
+    background-color: white; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    
+    padding-left: 150px; /* Augmenter le padding à gauche */
+    padding-right: 150px;
+}
+
+/* Section pour le logo et la partie à propos */
+.about-section {
+    flex: 1; /* Prend tout l'espace disponible */
+    display: flex;
+    flex-direction: column; /* Aligne le logo et la section À propos en colonne */
+    align-items: center; /* Centre le contenu horizontalement */
+    text-align: center; /* Centre le texte */
+}
+
+/* Style du logo */
+.logo img {
+    width: 300px; /* Ajuste la taille si nécessaire */
+    margin-bottom: 10px; /* Espace sous le logo */
+}
+
+/* Section à propos de nous */
+.about {
+    background-color: #f8f8f8; /* Couleur de fond légère */
+    padding: 10px; /* Réduire le padding autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-top: 0;
+}
+
+/* Section du formulaire */
+.form-section {
+    flex: 1; /* Prend tout l'espace disponible */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content: center; /* Centre le contenu verticalement */
+    padding: 150px 20px; /* Padding intérieur : 90px en haut et en bas, 20px à gauche et à droite */
+    margin: 20px 40px; /* Ajouter un espace autour de la section */
+    
+}
+
+/* Style du formulaire de connexion */
+form {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    background-color: #fff; /* Couleur de fond blanche */
+    padding: 20px; /* Padding intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin: 20px 0; /* Uniformiser l'espace en haut et en bas du formulaire */
+}
+
+/* Styles pour les champs et le bouton */
+input[type="email"],
+input[type="password"] {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+    padding: 12px;
+    margin-bottom: 50px; /* Réduire l'espace entre les champs */
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre interne */
+}
+
+/* Bouton de soumission */
+button {
+    background-color: #112f57; /* Couleur du bouton */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+button:hover {
+    background-color: #0d2343; /* Couleur au survol */
+}
+
+/* Style pour les liens */
+.links {
+    text-align: center;
+    margin-top: 10px; /* Réduire l'espace au-dessus des liens */
+}
+
+.links a {
+    color: #112f57;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}

@@ -1,0 +1,40 @@
+<app-layout></app-layout> <!-- Utiliser le composant Layout ici -->
+<h1>Calendrier</h1>
+
+<div class="calendar">
+  <!-- Header du calendrier avec navigation -->
+  <div class="calendar-header">
+    <button class="prev" (click)="changeMonth('prev')">&#10094;</button>
+    <span class="month-year">{{ currentMonth }} {{ currentYear }}</span>
+    <button class="next" (click)="changeMonth('next')">&#10095;</button>
+  </div>
+  
+  <!-- Jours de la semaine (dimanche à samedi) -->
+  <div class="calendar-days">
+    <div class="day">Sun</div>
+    <div class="day">Mon</div>
+    <div class="day">Tue</div>
+    <div class="day">Wed</div>
+    <div class="day">Thu</div>
+    <div class="day">Fri</div>
+    <div class="day">Sat</div>
+  </div>
+  
+  <!-- Jours du mois, avec les événements si disponibles -->
+  <div class="calendar-dates">
+    <div class="date empty" *ngFor="let day of days; let i = index" [class.empty]="day === null">
+      <div *ngIf="day !== null" class="day-number" (mouseenter)="showEventInfo(day)" (mouseleave)="hideEventInfo()">
+        <!-- Afficher uniquement l'icône et la description quand l'utilisateur survole un jour avec un événement -->
+        <span [class.event-day]="isEvent(day)">
+          {{ day }}
+        </span>
+        
+        <!-- Afficher l'icône 📅 et la description lorsque la souris survole un jour avec un événement -->
+        <div *ngIf="hoveredDay === day && isEvent(day)" class="event-tooltip">
+          <div class="event-indicator">📅</div>
+          <div>{{ getEventDescription(day) }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

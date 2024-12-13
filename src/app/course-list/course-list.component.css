@@ -1,0 +1,84 @@
+/* Conteneur de la liste de cours */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;  /* Les cartes passent à la ligne si nécessaire */
+    justify-content: space-between;  /* Espacement égal entre les cartes */
+    gap: 20px; /* Espacement entre les cartes */
+    margin-top: 20px;
+  }
+  
+  /* Carte de cours */
+  .course-card {
+    background-color: #fff;
+    padding: 20px; /* Réduit le padding pour équilibrer l'espace */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(16.66% - 20px); /* 6 cartes par ligne */
+    height: auto; /* Ajuste la hauteur automatiquement selon le contenu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px); /* Effet de soulèvement */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Informations du cours */
+  .course-info {
+    text-align: left;
+  }
+  
+  .course-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center; /* Centrer le texte */
+  }
+  
+  .course-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  /* Bouton Voir Plus */
+  .view-button {
+    background-color: #9949bb;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #732d91;
+  }
+  
+  /* Media Query pour ajuster la disposition sur les petits écrans */
+  @media (max-width: 1024px) {
+    .course-card {
+      width: calc(33.33% - 20px); /* 3 cartes par ligne sur les tablettes */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course-card {
+      width: calc(50% - 20px); /* 2 cartes par ligne sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-card {
+      width: 100%; /* 1 carte par ligne sur les très petits écrans */
+    }
+  }
+  

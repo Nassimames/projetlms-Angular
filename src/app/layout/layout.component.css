@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    height: 60px;  /* Ajuste la taille de l'image (hauteur) */
+    width: auto;   /* Laisse la largeur s'ajuster proportionnellement */
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  /* User icon styling */
+  .user-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  
+  /* Menu icon */
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    margin: 0; /* Supprime toute marge */
+    padding: 0; /* Supprime tout padding */
+    vertical-align: middle; /* Aligne l'icône avec les autres éléments */
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 4px;
+    background-color: #333;
+    margin: 2px 0; /* Espace minimal entre les lignes */
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  /* Menu latéral */
+  .side-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .side-menu li:hover {
+    background-color: #34495e;
+  }
+  
+  .side-menu mat-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  /* Affichage du menu latéral avec *ngIf */
+  .side-menu[style*="display: block"] {
+    display: block;
+  }
+  

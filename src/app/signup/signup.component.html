@@ -1,0 +1,51 @@
+<div class="login-container">
+  <div class="about-section">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </div>
+
+  <div class="form-section">
+    <form class="form" (ngSubmit)="onSubmit()">
+      <p class="message">Signup now and get full access to our app.</p>
+      
+      <div class="flex">
+        <label>
+          <input required [(ngModel)]="firstname" name="firstname" placeholder="Firstname" type="text" class="input">
+          <span>Firstname</span>
+        </label>
+        <label>
+          <input required [(ngModel)]="lastname" name="lastname" placeholder="Lastname" type="text" class="input">
+          <span>Lastname</span>
+        </label>
+      </div>
+
+      <label>
+        <input required [(ngModel)]="email" name="email" placeholder="Email" type="email" class="input">
+        <span>Email</span>
+      </label>
+
+      <label>
+        <input required [(ngModel)]="password" name="password" placeholder="Password" type="password" class="input">
+        <span>Password</span>
+      </label>
+
+      <label>
+        <input required [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm Password" type="password" class="input">
+        <span>Confirm Password</span>
+      </label>
+
+      <!-- Nouveau champ Role -->
+      <label>
+        <select required [(ngModel)]="role" name="role" class="input">
+          <option value="">Select your role</option>
+          <option value="prof">Prof</option>
+          <option value="student">Student</option>
+        </select>
+      </label>
+
+      <button class="submit" type="submit">Submit</button>
+      <p class="signin">Already have an account? <a href="#">Signin</a></p>
+    </form>
+  </div>
+</div>

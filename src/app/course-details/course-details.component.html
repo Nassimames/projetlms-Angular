@@ -1,0 +1,38 @@
+
+<div class="course-details-container">
+  <div class="course-header">
+    <h1>Angular</h1>
+    <p class="course-category">Catégorie : Développement Web</p>
+  </div>
+
+  <div class="course-content">
+    <div class="course-description">
+      <h3>Description du cours</h3>
+      <p>
+        Ce cours couvre les concepts fondamentaux et avancés d'Angular. Vous apprendrez à développer des applications web dynamiques et réactives en utilisant les meilleures pratiques.
+      </p>
+    </div>
+
+    <div class="course-details">
+      <h3>Détails</h3>
+      <ul>
+        <li><strong>Durée :</strong> 30 heures</li>
+        <li><strong>Niveau :</strong> Intermédiaire</li>
+        <li><strong>Prérequis :</strong> Connaissance de base en JavaScript</li>
+      </ul>
+    </div>
+  
+
+  <div class="course-syllabus">
+    <h3>Contenu du cours</h3>
+    <ul>
+      <li *ngFor="let content of courseContent">{{ content }}</li>
+    </ul>
+  </div>
+
+  <div class="course-footer">
+    <button class="enroll-button">S'inscrire</button>
+    <button class="back-button" [routerLink]="'/courses'">Retour à la liste des cours</button>
+  </div>
+  
+</div>

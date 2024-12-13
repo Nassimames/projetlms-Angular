@@ -1,0 +1,35 @@
+<div class="navbar">
+    <div class="menu-icon" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <img src="lmss-removebg-preview.png" alt="LMS Academy Logo" class="logo">
+    <input type="text" placeholder="search" class="search-bar">
+    <div (click)="goToUserDetails()">
+        <img 
+          class="user-icon" 
+          src="profil.png" 
+          alt="User Icon" 
+        />
+      </div>
+      
+
+</div>
+
+<div class="side-menu" *ngIf="isMenuOpen">
+    <ul>
+        <li><mat-icon>home</mat-icon> Home</li>
+        <li [routerLink]="'/courses'">
+            <mat-icon>book</mat-icon> Cours
+        </li>
+        <li><mat-icon>star</mat-icon> Badges</li>
+        <li routerLink="/calendar">
+            <mat-icon>calendar_today</mat-icon> Calendrier
+          </li>
+        </ul>
+</div>
+
+<!-- Ici se trouve le contenu dynamique de chaque page -->
+<router-outlet></router-outlet>

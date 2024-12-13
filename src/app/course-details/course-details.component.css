@@ -1,0 +1,130 @@
+.course-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .course-header h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .course-category {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .course-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .course-description, .course-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-description h3, .course-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .course-description p, .course-details ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .course-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-details li {
+    margin-bottom: 8px;
+  }
+  
+  .course-details li strong {
+    color: #333;
+  }
+  
+  .course-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .enroll-button, .back-button {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enroll-button:hover, .back-button:hover {
+    background-color: #732d91;
+  }
+  
+
+
+  .course-syllabus {
+    background-color: #fff;  /* Fond blanc pour correspondre à la carte de cours */
+    padding: 20px;  /* Espacement intérieur */
+    border-radius: 8px;  /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Ombre pour donner un effet de profondeur */
+    margin-top: 20px;  /* Marge au-dessus pour espacer des autres sections */
+  }
+  
+  .course-syllabus h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;  /* Couleur sombre pour le titre */
+    margin-bottom: 10px;  /* Marge en bas pour espacer le titre du contenu */
+  }
+  
+  .course-syllabus ul {
+    list-style-type: none;  /* Retirer les puces des éléments de la liste */
+    padding-left: 0;  /* Supprimer le padding à gauche */
+  }
+  
+  .course-syllabus li {
+    font-size: 16px;
+    color: #555;  /* Couleur de texte plus claire pour les éléments de liste */
+    margin-bottom: 8px;  /* Espacement entre les éléments de la liste */
+  }
+  
+  .course-syllabus li::before {
+    content: "• ";  /* Ajouter une puce personnalisée */
+    color: #9949bb;  /* Couleur pour la puce */
+    font-size: 18px;  /* Taille de la puce */
+    margin-right: 10px;  /* Espacement entre la puce et le texte */
+  }
+  
+  @media (max-width: 768px) {
+    .course-syllabus {
+      padding: 15px;  /* Réduire le padding sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-syllabus {
+      padding: 10px;  /* Réduire encore plus le padding pour les très petits écrans */
+    }
+  }
+  
