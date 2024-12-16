@@ -6,38 +6,37 @@
   </div>
 
   <div class="form-section">
-    <form class="form" (ngSubmit)="onSubmit()">
+    <form id="signupForm">
       <p class="message">Signup now and get full access to our app.</p>
       
       <div class="flex">
         <label>
-          <input required [(ngModel)]="firstname" name="firstname" placeholder="Firstname" type="text" class="input">
+          <input required id="firstname" name="firstname" placeholder="Firstname" type="text" class="input">
           <span>Firstname</span>
         </label>
         <label>
-          <input required [(ngModel)]="lastname" name="lastname" placeholder="Lastname" type="text" class="input">
+          <input required id="lastname" name="lastname" placeholder="Lastname" type="text" class="input">
           <span>Lastname</span>
         </label>
       </div>
 
       <label>
-        <input required [(ngModel)]="email" name="email" placeholder="Email" type="email" class="input">
+        <input required id="email" name="email" placeholder="Email" type="email" class="input">
         <span>Email</span>
       </label>
 
       <label>
-        <input required [(ngModel)]="password" name="password" placeholder="Password" type="password" class="input">
+        <input required id="password" name="password" placeholder="Password" type="password" class="input">
         <span>Password</span>
       </label>
 
       <label>
-        <input required [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm Password" type="password" class="input">
+        <input required id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" type="password" class="input">
         <span>Confirm Password</span>
       </label>
 
-      <!-- Nouveau champ Role -->
       <label>
-        <select required [(ngModel)]="role" name="role" class="input">
+        <select required id="role" name="role" class="input">
           <option value="">Select your role</option>
           <option value="prof">Prof</option>
           <option value="student">Student</option>

@@ -20,36 +20,57 @@
 <!-- Menu latéral -->
 <div class="side-menu" *ngIf="isMenuOpen">
   <ul>
-    <li><mat-icon>home</mat-icon> Home</li>
-    <li [routerLink]="'/courses'">
-      <mat-icon>book</mat-icon> Cours
+    <li [routerLink]="'/home'" ><mat-icon>home</mat-icon> <a >Home</a></li>
+    <li [routerLink]="'/courses'"><mat-icon>book</mat-icon> <a >Cours</a></li>
+    <li routerLink="/badges">
+      <mat-icon>star</mat-icon> Badges
     </li>
-   
-    <li><mat-icon>star</mat-icon> Badges</li>
-    <li routerLink="/calendar">
-      <mat-icon>calendar_today</mat-icon> Calendrier
-    </li>  </ul>
+    
+    <li [routerLink]="'/calendar'"><mat-icon>calendar_today</mat-icon> <a >Calendrier</a></li>
+  </ul>
 </div>
 
-  <div class="main-content">
-    <!-- Section des cours -->
-    <div class="course-section">
-      <h3>Cours</h3>
-      <div class="course-cards">
-        <div class="card">Tous les cours</div>
-        <div class="card">En cours</div>
-        <div class="card">Terminé</div>
+<div class="main-content">
+  <div class="stats-section">
+    <h3>Statistiques des Cours</h3>
+    <div class="stats-cards">
+      <!-- Carte du total des cours -->
+      <div class="stat-card total">
+        <h4>Total des Cours</h4>
+        <div class="circle">
+          <p>100</p> <!-- Valeur statique pour le total des cours -->
+        </div>
+      </div>
+  
+      <!-- Carte des cours terminés -->
+      <div class="stat-card completed">
+        <h4>Cours Terminés</h4>
+        <div class="circle">
+          <p>60</p> <!-- Valeur statique pour les cours terminés -->
+        </div>
+      </div>
+  
+      <!-- Carte des cours en cours -->
+      <div class="stat-card ongoing">
+        <h4>Cours en Cours</h4>
+        <div class="circle">
+          <p>40</p> <!-- Valeur statique pour les cours en cours -->
+        </div>
       </div>
     </div>
-  
-    <!-- Section Bienvenue -->
-    <div class="welcome-section">
-      <h2>Bienvenue de nouveau, Nassima ! 👋</h2>
-      <p>Today is Tuesday 22 October 2024. Your last login was 6 days ago.</p>
-      <p>Recently accessed course: INF5105 Services Oriented Architecture.</p>
-      <button class="continue-btn" (click)="navigateToCourseDetails()">Continue</button>
-    </div>
   </div>
+  
+  <!-- Section Bienvenue -->
+  <div class="welcome-section">
+    <h2>Bienvenue de nouveau, Nassima ! 👋</h2>
+    <p>Today is Tuesday 20 decembre 2024. Your last login was 6 days ago.</p>
+    <p>Recently accessed course: Introduction à Angular.</p>
+    <button class="continue-btn" (click)="navigateToCourseDetails()">Continue</button>
+  </div>
+</div>
+
+  
+  
   
 
   

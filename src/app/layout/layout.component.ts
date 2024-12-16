@@ -23,4 +23,9 @@ export class LayoutComponent {
   goToUserDetails() {
     this.router.navigate(['/user-details']); // Redirection vers la page user-details
   }
+
+   // Méthode pour loguer la navigation
+   logNavigation() {
+    console.log('Navigating to badges'); // Utilisation de console.log directement
+  }
 }

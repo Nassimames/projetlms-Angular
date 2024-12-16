@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'http://localhost:4000/signup'; // L'URL de votre API backend
+  private apiUrl = 'http://localhost:4000/register'; // L'URL de votre API backend
 
   constructor(private http: HttpClient) {}
 
