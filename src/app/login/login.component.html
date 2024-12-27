@@ -12,25 +12,24 @@
 
     <!-- Section pour le formulaire -->
     <div class="form-section">
-        <form>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="mot de passe" />
+        <form (ngSubmit)="onLogin()">
+            <!-- Liaison bidirectionnelle avec les variables email et password -->
+            <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required />
+            <input type="password" placeholder="Mot de passe" [(ngModel)]="password" name="password" required />
             <label>
                 <input type="checkbox" /> Rappelle-moi
             </label>
             <!-- Exemple de bouton de login -->
-           <button (click)="onLogin()">Login</button>
-
+            <button type="submit">Se connecter</button>
         </form>
 
         <div class="links">
-            <a href="#">mot de passe oubliée ?</a>
+            <a href="#">Mot de passe oublié ?</a>
             <br />
             <p>
                 Vous n'avez pas de compte ?
-                <a (click)="navigateToSignIn()">Inscrivez-vous ici</a>
-              </p>
-              
+                <a>Inscrivez-vous ici</a>
+            </p>
         </div>
     </div>
 </div>

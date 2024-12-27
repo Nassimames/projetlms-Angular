@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class UserDetailsComponent {
   user = {
     name: 'Nassima',
-    email: 'nassima@example.com',
+    email: 'mesbahnassima0@gmail.com',
     phone: '+123456789',
     address: '123, Rue , V, maroc',
     profilePicture: 'assets/profile-picture.jpg'
